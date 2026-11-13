@@ -68,3 +68,50 @@ body{color:var(--md-ink)}
 @media(max-width:1000px){.hero-photo-frame{left:42%;opacity:.75}.hero-copy{width:58%}.hero-premium .hero-inner{padding-top:72px}.hero-premium h1{font-size:clamp(40px,5.8vw,60px)}}
 @media(max-width:700px){.hero.hero-premium{min-height:770px}.hero-photo-frame{inset:0 0 auto 0;height:345px;border-left:0;border-bottom:7px solid #e7b85c;border-radius:0 0 36% 12%;opacity:.55}.hero-pattern{background:linear-gradient(#041a3d66,#041a3d 48%),repeating-linear-gradient(45deg,transparent 0 26px,#d1b2680b 27px 28px)}.hero-premium .hero-inner{padding-top:62px;padding-bottom:35px}.hero-copy{width:100%;min-height:325px}.hero-premium h1{font-size:clamp(41px,9vw,58px);max-width:470px}.hero-premium .hero-copy p{font-size:14px;max-width:420px}.hero-premium .hero-actions{flex-wrap:wrap;gap:13px}.hero-slide-controls{margin:0 0 23px}.hero-premium .hero-search{border-radius:0 0 12px 12px}.hero-premium .hero-caption{margin-top:20px}}
 @media(prefers-reduced-motion:reduce){.hero-photo{transition:none;transform:none}}
+
+
+/* Revolution-inspired cinematic slider, responsive editorial layout */
+.hero.hero-revolution{min-height:780px;background:#061a3a;overflow:hidden}
+.hero-revolution .hero-photo-frame{inset:0;border:0;border-radius:0;opacity:1;z-index:-2}
+.hero-revolution .hero-photo{background-position:center center;transform:scale(1.14);filter:saturate(.92);transition:opacity 1.2s cubic-bezier(.2,.7,.2,1),transform 7.2s linear}
+.hero-revolution .hero-photo.show{transform:scale(1);opacity:1}
+.hero-revolution .hero-pattern{z-index:-1;opacity:1;background:linear-gradient(90deg,rgba(3,17,43,.95) 0%,rgba(3,23,54,.87) 34%,rgba(4,24,51,.48) 67%,rgba(4,19,40,.24) 100%),linear-gradient(0deg,rgba(3,17,42,.78),transparent 34%)}
+.hero-revolution .hero-inner{padding-top:103px;padding-bottom:70px}
+.hero-revolution .hero-copy{width:min(760px,75%);min-height:345px}
+.hero-revolution h1{font-family:'Playfair Display',serif;font-size:clamp(50px,6.1vw,86px);font-weight:600;line-height:1.14;letter-spacing:-1.7px;text-wrap:balance;text-shadow:0 3px 25px #0003}
+.hero-revolution h1 em{display:inline-block;color:#f6d187;font-style:normal}
+.hero-revolution .hero-copy p{max-width:590px;font-size:17px;line-height:1.85;color:#f2f4f7;text-wrap:pretty}
+.hero-revolution .eyebrow{font-size:12px;letter-spacing:3.4px;color:#f4d08a}
+.hero-revolution .hero-actions{gap:26px;margin:32px 0 20px}
+.hero-revolution .hero-actions>a:last-child{font-size:13px;font-weight:700;color:#fff}
+.hero-revolution .btn-teal{padding:17px 26px;box-shadow:0 8px 30px #0003}
+.revolution-copy .eyebrow{display:block;animation:revReveal .7s both}
+.revolution-copy h1{animation:revReveal .85s .17s both}
+.revolution-copy p{animation:revReveal .85s .35s both}
+.revolution-copy .hero-actions{animation:revReveal .85s .5s both}
+@keyframes revReveal{from{opacity:0;transform:translateY(35px);filter:blur(5px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+.hero-revolution .hero-slide-controls{position:relative;z-index:3;display:flex;align-items:center;gap:11px;margin:0 0 32px}
+.hero-revolution .hero-slide-controls button{width:38px;height:38px;background:#051d40a8;border:1px solid #f6d1878a;color:#fff;transition:background .2s}
+.hero-revolution .hero-slide-controls button:hover{background:#e5b966;color:#061c3e}
+.hero-revolution .hero-slide-controls .hero-dot{width:27px;height:28px;border:0;background:transparent}
+.hero-revolution .hero-dot span{width:8px;height:8px;background:#e8e9eb;opacity:.65}
+.hero-revolution .hero-dot.active span{width:25px;height:5px;background:#f6cf7f;opacity:1}
+.hero-revolution .hero-slide-controls .hero-pause{font-size:14px;width:33px;height:33px;margin-left:8px}
+.hero-progress{position:absolute;top:0;left:0;width:100%;height:4px;background:#ffffff1c;z-index:4}
+.hero-progress>span{display:block;width:0;height:100%;background:#e8b95d;animation:revProgress 6.5s linear forwards}
+.hero-progress>span.paused{animation-play-state:paused}
+@keyframes revProgress{from{width:0}to{width:100%}}
+.hero-revolution .hero-quick{width:min(680px,100%);margin:0 auto;background:#fff;border:1px solid #f0e8d9;border-bottom:0;box-shadow:0 -5px 20px #0001}
+.hero-revolution .hero-quick a:first-child,.hero-revolution .hero-quick a:hover{background:#071f45;color:#f5d18b}
+.hero-revolution .hero-search{background:#fff;width:min(1100px,100%);padding:13px;box-shadow:0 24px 55px #0006}
+.hero-revolution .hero-caption{font-size:10px;letter-spacing:3px;color:#f2dcae}
+.section-title h2{line-height:1.25;letter-spacing:-.5px;text-wrap:balance}
+.section-title p{line-height:1.85;max-width:650px}
+.section-title.center p{margin-left:auto;margin-right:auto}
+.section{scroll-margin-top:90px}
+.cards{align-items:stretch}
+.card h3{line-height:1.35}
+.spiritual h2{line-height:1.25}
+@media(max-width:850px){.hero-revolution .hero-copy{width:95%}.hero-revolution .hero-pattern{background:linear-gradient(90deg,#03112bea,#061c3dbb 75%,#061c3d70),linear-gradient(0deg,#061a3bdd,transparent 45%)}.hero-revolution h1{font-size:clamp(44px,7.4vw,68px)}}
+@media(max-width:640px){.hero.hero-revolution{min-height:790px}.hero-revolution .hero-inner{padding-top:64px;padding-bottom:38px}.hero-revolution .hero-copy{width:100%;min-height:350px}.hero-revolution h1{font-size:clamp(39px,10.2vw,54px);letter-spacing:-.7px;line-height:1.2}.hero-revolution .hero-copy p{font-size:14px;line-height:1.7}.hero-revolution .hero-photo-frame{inset:0;opacity:1;height:100%;border:0;border-radius:0}.hero-revolution .hero-photo{background-position:57% center}.hero-revolution .hero-pattern{background:linear-gradient(90deg,#03112be8,#03112bc0),linear-gradient(0deg,#03112bee,transparent 60%)}.hero-revolution .hero-actions{margin:25px 0 18px;gap:15px}.hero-revolution .hero-actions>a:last-child{font-size:12px}.hero-revolution .hero-slide-controls{margin-bottom:22px}.hero-revolution .hero-search{padding:10px}.hero-revolution .hero-caption{margin-top:17px}.hero-revolution .hero-quick a{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.revolution-copy .eyebrow,.revolution-copy h1,.revolution-copy p,.revolution-copy .hero-actions{animation:none}.hero-revolution .hero-photo{transition:opacity .2s;transform:none}.hero-progress>span{animation:none;width:100%}}
