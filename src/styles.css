@@ -40,3 +40,31 @@ body{color:var(--md-ink)}
 .btn-outline{border-color:#d6b36e}
 @media(max-width:1000px){.header .nav.open{background:#061b3e}.trust-strip{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.hero{min-height:660px;background-position:62% center}.hero-inner{padding-top:65px}.hero h1{font-size:46px}.hero-quick{gap:1px;padding:7px 5px}.hero-quick a{padding:10px 3px;font-size:10px}.hero-search{border-radius:0 0 13px 13px}.trust-strip{grid-template-columns:repeat(2,1fr);gap:18px}.trust-strip span{font-size:10px}.hero-actions{margin-bottom:32px}.header{background:#061b3e}.menu{color:#f6d28b}}
+
+
+/* Faithful Elegance Marine hero composition: navy left, gold arched image right, floating search */
+.hero.hero-premium{isolation:isolate;overflow:visible;min-height:740px;background:#041a3d;color:white}
+.hero-premium .hero-overlay{display:none}
+.hero-pattern{position:absolute;inset:0;background:radial-gradient(circle at 14% 24%,#123e75 0,transparent 45%),repeating-linear-gradient(45deg,transparent 0 32px,#d1b2680b 33px 34px,transparent 35px 64px);opacity:.85;z-index:-1}
+.hero-photo-frame{position:absolute;inset:0 0 0 47%;overflow:hidden;border-left:10px solid #e7b85c;border-top-left-radius:44% 92%;border-bottom-left-radius:7% 30%;z-index:-1;background:#0b3056}
+.hero-photo{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transform:scale(1.04);transition:opacity 1s ease,transform 6s ease}
+.hero-photo.show{opacity:1;transform:scale(1)}
+.hero-premium .hero-inner{padding-top:90px;padding-bottom:58px;position:relative}
+.hero-copy{width:min(545px,50%);min-height:335px}
+.hero-premium h1{font-family:'Playfair Display',serif;font-size:clamp(48px,5.1vw,76px);line-height:1.16;margin:25px 0 20px;letter-spacing:-1.5px}
+.hero-premium h1 em{color:#f5cf81;font-style:normal}
+.hero-premium .hero-copy p{font-size:17px;line-height:1.8;max-width:480px;color:#e4e9f2}
+.hero-premium .hero-actions{margin:28px 0 10px;display:flex;align-items:center;gap:23px}
+.hero-slide-controls{display:flex;align-items:center;gap:9px;margin:12px 0 25px}
+.hero-slide-controls button{border:1px solid #e8c47d6b;color:#f4d69b;background:#061c3d99;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;font-size:23px}
+.hero-slide-controls button.hero-dot{width:28px;height:20px;border:0;background:transparent}
+.hero-dot span{display:block;width:7px;height:7px;border-radius:50%;background:#a2b2cb;transition:all .2s}
+.hero-dot.active span{width:24px;border-radius:8px;background:#f3c874}
+.hero-premium .hero-quick{position:relative;z-index:2;margin:0 auto 0;width:min(650px,100%);background:#fff}
+.hero-premium .hero-search{position:relative;z-index:2;margin:0 auto;width:min(1150px,100%);border-radius:12px;box-shadow:0 17px 45px #0004}
+.hero-premium .hero-caption{text-align:center;margin-top:25px}
+.hero-premium .hero-search label{min-width:0}
+.hero-premium .hero-search button{background:linear-gradient(110deg,#f6d48c,#e9b958);color:#061d42}
+@media(max-width:1000px){.hero-photo-frame{left:42%;opacity:.75}.hero-copy{width:58%}.hero-premium .hero-inner{padding-top:72px}.hero-premium h1{font-size:clamp(40px,5.8vw,60px)}}
+@media(max-width:700px){.hero.hero-premium{min-height:770px}.hero-photo-frame{inset:0 0 auto 0;height:345px;border-left:0;border-bottom:7px solid #e7b85c;border-radius:0 0 36% 12%;opacity:.55}.hero-pattern{background:linear-gradient(#041a3d66,#041a3d 48%),repeating-linear-gradient(45deg,transparent 0 26px,#d1b2680b 27px 28px)}.hero-premium .hero-inner{padding-top:62px;padding-bottom:35px}.hero-copy{width:100%;min-height:325px}.hero-premium h1{font-size:clamp(41px,9vw,58px);max-width:470px}.hero-premium .hero-copy p{font-size:14px;max-width:420px}.hero-premium .hero-actions{flex-wrap:wrap;gap:13px}.hero-slide-controls{margin:0 0 23px}.hero-premium .hero-search{border-radius:0 0 12px 12px}.hero-premium .hero-caption{margin-top:20px}}
+@media(prefers-reduced-motion:reduce){.hero-photo{transition:none;transform:none}}
