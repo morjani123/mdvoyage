@@ -1,7 +1,7 @@
 import {useEffect,useMemo,useState} from 'react';
 import type {FormEvent} from 'react';
 import {Link,NavLink,Routes,Route,useNavigate,useParams,useSearchParams} from 'react-router-dom';
-import {Plane,Menu,X,ArrowRight,MapPin,CalendarDays,Clock3,Heart,Search,Bus,Users,Check,Compass,ShieldCheck,Headphones,Globe2,Trash2,Plus,Minus} from 'lucide-react';
+import {Plane,Menu,X,ArrowRight,MapPin,CalendarDays,Clock3,Heart,Search,Users,Check,Compass,ShieldCheck,Headphones,Globe2,Trash2,Plus,Minus} from 'lucide-react';
 import {trips,money,dateFr} from './data';
 import type {Trip} from './data';
 type Booking={id:string;tripId:number;name:string;email:string;phone:string;travelers:number;status:string};
