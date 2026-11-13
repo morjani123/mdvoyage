@@ -418,3 +418,44 @@ body{background:#fff;color:#102b51}
 @media(max-width:1050px){.model-b-hero-text{margin-left:25px}.model-b-service-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.model-b-service:nth-child(3){border-right:0}.model-b-service:nth-child(-n+3){border-bottom:1px solid #e2ebf4}.model-b-search-form{grid-template-columns:repeat(2,minmax(0,1fr))}.model-b-search-form button{grid-column:1/-1}}
 @media(max-width:650px){.model-b-hero{height:570px}.model-b-wash{background:linear-gradient(90deg,#eff9fff0,#e8f6ffd0 65%,#e6f4ff66)}.model-b-hero-text{margin:0 22px;max-width:calc(100% - 44px)}.model-b-hero-text h1{font-size:clamp(34px,9vw,48px);letter-spacing:-1.3px}.model-b-hero-text p{font-size:14px}.model-b-arrow{width:34px;height:34px;font-size:26px}.model-b-prev{left:5px}.model-b-next{right:5px}.model-b-service-grid{grid-template-columns:repeat(3,minmax(0,1fr));padding:8px 4px}.model-b-service{min-height:90px;padding:10px 4px}.model-b-service span{font-size:24px}.model-b-service strong{font-size:10px}.model-b-search{padding:40px 0}.model-b-search-form{grid-template-columns:1fr}.model-b-search-form button{grid-column:auto}}
 @media(prefers-reduced-motion:reduce){.model-b-slide{transition:opacity .2s;transform:none!important}.model-b-hero-text,.model-b-hero-text *{animation:none!important}}
+
+
+/* Model B — expanded international travel editorial sections */
+.experience-section{background:#fff!important}
+.experience-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.experience-card{display:block;overflow:hidden;border-radius:19px;background:#f4faff;border:1px solid #e2eef8;transition:transform .25s,box-shadow .25s}
+.experience-card:hover{transform:translateY(-6px);box-shadow:0 16px 35px #124b751c}
+.experience-card img{display:block;width:100%;height:220px;object-fit:cover;transition:transform .5s}
+.experience-card:hover img{transform:scale(1.06)}
+.experience-card>div{padding:22px}
+.experience-card h3{font-size:20px;color:#0b315f;margin:0 0 8px;line-height:1.3}
+.experience-card p{font-size:12px;line-height:1.75;color:#668098;min-height:43px;margin:0 0 15px}
+.experience-card span{display:inline-flex;align-items:center;gap:8px;color:#087cc2;font-size:12px;font-weight:800}
+.journey-section{background:#f1f8ff!important}
+.journey-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:21px}
+.journey-card{padding:30px;background:#fff;border:1px solid #e0edf7;border-radius:18px;display:flex;flex-direction:column;min-height:260px;box-shadow:0 8px 25px #184c7010;transition:transform .2s,box-shadow .2s}
+.journey-card:hover{transform:translateY(-5px);box-shadow:0 16px 35px #184c7022}
+.journey-icon{font-size:31px;display:grid;place-items:center;background:#eaf6ff;border-radius:15px;width:62px;height:62px}
+.journey-card h3{font-size:21px;color:#0a315e;margin:19px 0 9px}
+.journey-card p{font-size:13px;line-height:1.8;color:#617d93;margin:0 0 19px}
+.journey-card strong{display:flex;align-items:center;gap:8px;color:#087ac1;font-size:12px;margin-top:auto}
+.inspiration-section{background:#fff}
+.inspiration-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.inspiration-card{position:relative;min-height:365px;overflow:hidden;border-radius:20px;background:#133d5f}
+.inspiration-card:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#071f42d9,transparent 68%)}
+.inspiration-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.inspiration-card:hover img{transform:scale(1.07)}
+.inspiration-card>div{position:absolute;z-index:1;bottom:25px;left:25px;right:25px;color:#fff}
+.inspiration-card small{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#e3f5ff}
+.inspiration-card h3{font-size:24px;line-height:1.3;margin:9px 0 14px;color:#fff}
+.inspiration-card span{font-size:12px;font-weight:800;color:#ffbd8e}
+.newsletter-cta{padding:62px 0;background:#eaf6ff}
+.newsletter-inner{display:flex;align-items:center;justify-content:space-between;gap:35px}
+.newsletter-inner>div{max-width:700px}
+.newsletter-inner h2{font-size:clamp(28px,3vw,42px);line-height:1.22;letter-spacing:-1px;color:#0b315f;margin:10px 0}
+.newsletter-inner p{color:#607f9b;font-size:14px;line-height:1.8}
+.newsletter-inner .btn{white-space:nowrap}
+.spiritual-compact{padding-top:70px!important;padding-bottom:70px!important}
+@media(max-width:1000px){.experience-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.journey-grid{gap:13px}.journey-card{padding:22px}}
+@media(max-width:700px){.experience-grid{gap:12px}.experience-card img{height:165px}.experience-card>div{padding:15px}.experience-card h3{font-size:17px}.experience-card p{font-size:11px}.journey-grid,.inspiration-grid{grid-template-columns:1fr}.journey-card{min-height:unset}.inspiration-card{min-height:300px}.newsletter-inner{flex-direction:column;align-items:flex-start}.newsletter-cta{padding:45px 0}}
+@media(max-width:420px){.experience-grid{grid-template-columns:1fr}.experience-card img{height:210px}}
