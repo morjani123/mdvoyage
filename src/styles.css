@@ -115,3 +115,63 @@ body{color:var(--md-ink)}
 @media(max-width:850px){.hero-revolution .hero-copy{width:95%}.hero-revolution .hero-pattern{background:linear-gradient(90deg,#03112bea,#061c3dbb 75%,#061c3d70),linear-gradient(0deg,#061a3bdd,transparent 45%)}.hero-revolution h1{font-size:clamp(44px,7.4vw,68px)}}
 @media(max-width:640px){.hero.hero-revolution{min-height:790px}.hero-revolution .hero-inner{padding-top:64px;padding-bottom:38px}.hero-revolution .hero-copy{width:100%;min-height:350px}.hero-revolution h1{font-size:clamp(39px,10.2vw,54px);letter-spacing:-.7px;line-height:1.2}.hero-revolution .hero-copy p{font-size:14px;line-height:1.7}.hero-revolution .hero-photo-frame{inset:0;opacity:1;height:100%;border:0;border-radius:0}.hero-revolution .hero-photo{background-position:57% center}.hero-revolution .hero-pattern{background:linear-gradient(90deg,#03112be8,#03112bc0),linear-gradient(0deg,#03112bee,transparent 60%)}.hero-revolution .hero-actions{margin:25px 0 18px;gap:15px}.hero-revolution .hero-actions>a:last-child{font-size:12px}.hero-revolution .hero-slide-controls{margin-bottom:22px}.hero-revolution .hero-search{padding:10px}.hero-revolution .hero-caption{margin-top:17px}.hero-revolution .hero-quick a{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.revolution-copy .eyebrow,.revolution-copy h1,.revolution-copy p,.revolution-copy .hero-actions{animation:none}.hero-revolution .hero-photo{transition:opacity .2s;transform:none}.hero-progress>span{animation:none;width:100%}}
+
+
+/* MD Voyage — Horizon Azure redesign: bright editorial travel agency */
+:root{--azure:#0878b9;--ocean:#063b65;--sun:#ffb648;--paper:#f6faff}
+body{background:#fff;color:#183d58}
+.topbar{background:#f0f7fc;color:#36647f;border-bottom:1px solid #deebf3}
+.header{background:#fff;box-shadow:0 3px 20px #16476810}
+.logo{color:#0c4770}.logo-symbol{border-color:#0786c5;background:#e6f6ff;color:#0786c5}.logo small{color:#66899c}.teal{color:#0794cb}
+.nav a{color:#204963}.nav a.active,.nav a:hover{color:#008fc9}
+.header-cta,.btn-teal{background:#087fbc;color:white;border-radius:9px;box-shadow:none}
+.header-cta:hover,.btn-teal:hover{background:#05699f;color:white}
+.hero.hero-revolution{background:#07456d;min-height:755px}
+.hero-revolution .hero-pattern{background:linear-gradient(90deg,#042d53ec 0%,#073a61bf 39%,#06395648 77%),linear-gradient(0deg,#063c5bd0,transparent 35%)}
+.hero-revolution .hero-photo{filter:saturate(1.1)}
+.hero-revolution .eyebrow{color:#ffe0a2}
+.hero-revolution h1{font-family:'Playfair Display',serif;font-weight:600;letter-spacing:-1.4px}
+.hero-revolution h1 em{color:#ffcf79}
+.hero-revolution .btn-teal{background:#ffb84c;color:#103b56;box-shadow:0 10px 24px #0002}
+.hero-revolution .btn-teal:hover{background:#ffce81;color:#103b56}
+.hero-revolution .hero-slide-controls button{border-color:#fff8;background:#ffffff25}
+.hero-revolution .hero-dot.active span,.hero-progress>span{background:#ffbd59}
+.hero-revolution .hero-quick{border-radius:15px 15px 0 0;border:0;box-shadow:none;background:#fff}
+.hero-revolution .hero-quick a{color:#255472}
+.hero-revolution .hero-quick a:first-child,.hero-revolution .hero-quick a:hover{background:#e7f5ff;color:#0878b9}
+.hero-revolution .hero-search{border-radius:0 13px 13px 13px;box-shadow:0 20px 50px #003c5a3b}
+.hero-revolution .hero-search button{background:#087fbc;color:#fff}
+.hero-revolution .hero-caption{color:#e8f7ff}
+.trust-strip svg{color:#0788c4}
+.eyebrow,.section .eyebrow,.section-title .eyebrow{color:#0787bd}
+.section h2 em,.spiritual h2 em{color:#0b8bc0}
+.section.soft{background:#f1f8fd}
+.category{border-radius:17px;box-shadow:0 16px 35px #124d7314}
+.card{border:1px solid #e3edf5;border-radius:16px;box-shadow:0 10px 30px #145a8010}
+.card:hover{box-shadow:0 22px 40px #145a8026}
+.tag{background:#e7f7ff;color:#087ab4}
+.card-bottom strong,.location svg{color:#087db5}
+.circle-arrow{background:#e9f5fd;color:#087eb7}
+.transport-chip{display:inline-flex;align-items:center;gap:7px;color:#1379a8;background:#edf8fd;border-radius:20px;padding:7px 11px;margin:15px 0 0;font-size:11px;font-weight:800}
+.travel-services{background:#fff}
+.transport-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.transport-tile{display:flex;flex-direction:column;align-items:flex-start;min-height:235px;padding:27px 23px;background:#f4faff;border:1px solid #dcebf5;border-radius:16px;transition:transform .2s,box-shadow .2s}
+.transport-tile:hover{transform:translateY(-5px);box-shadow:0 16px 28px #15577c17}
+.transport-tile>span{font-size:30px;background:#e2f3ff;border-radius:13px;padding:8px}
+.transport-tile h3{font-family:'Playfair Display',serif;font-size:21px;color:#15466b;margin:17px 0 8px}
+.transport-tile p{font-size:12px;color:#68859a;line-height:1.7;margin:0 0 15px}
+.transport-tile strong{font-size:12px;color:#087fba;margin-top:auto}
+.demo-transport-note{text-align:center;color:#8ca2ae;font-size:11px;margin:25px 0 0}
+.international-feature{background:#eaf6fd}
+.international-feature-inner{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+.international-feature-inner h2{font-family:'Playfair Display',serif;font-size:clamp(36px,4vw,56px);font-weight:500;line-height:1.25}
+.international-feature-inner p{line-height:1.95;color:#607e90;font-size:14px;margin-bottom:28px}
+.international-feature-inner img{width:100%;height:410px;object-fit:cover;border-radius:22px;box-shadow:0 22px 45px #174c6c26}
+.spiritual{background-image:linear-gradient(90deg,#07395ae8,#075178b0),url('https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=1800&q=85')}
+.spiritual h2 em{color:#fbd494}
+.footer{background:#063550}
+.page-banner{background-color:#08618b}
+.filters{border-radius:13px}
+@media(max-width:1000px){.transport-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.international-feature-inner{gap:30px}}
+@media(max-width:700px){.transport-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.transport-tile{padding:19px 15px;min-height:220px}.transport-tile h3{font-size:18px}.international-feature-inner{grid-template-columns:1fr}.international-feature-inner img{height:290px}.hero-revolution .hero-pattern{background:linear-gradient(90deg,#043357e8,#0641669e),linear-gradient(0deg,#063c5bef,transparent 60%)}}
+@media(max-width:420px){.transport-grid{grid-template-columns:1fr}.transport-tile{min-height:unset}}
