@@ -301,3 +301,74 @@ body{background:#fff;color:#17211d;font-family:'DM Sans',sans-serif}
 .footer{background:#17211d}
 @media(max-width:700px){.hero.hero-v4{height:640px;min-height:640px;max-height:640px}.hero-v4 .hero-photo-frame{inset:0;height:100%;border:0;border-radius:0}.hero-v4 .hero-pattern{background:linear-gradient(90deg,#101e1be8,#101e1ba1),linear-gradient(0deg,#101e1bba,transparent)}.hero-v4 .hero-copy{width:100%;padding-bottom:30px}.hero-v4 h1{font-size:clamp(39px,9vw,56px);letter-spacing:-.7px}.hero-v4 .hero-copy p{font-size:14px;line-height:1.7}.hero-v4 .hero-slide-controls{bottom:23px}.hero-v4 .hero-index{top:20px;right:5px}.booking-search-section .hero-search{grid-template-columns:1fr}.booking-search-section .hero-search button{grid-column:auto}}
 @media(prefers-reduced-motion:reduce){.hero-v4 .hero-photo{transition:opacity .25s;transform:none}.hero-v4 .revolution-copy>*{animation:none!important}}
+
+
+/* MODEL B — Moderne & Lumineux. Scoped hero rules supersede all legacy themes. */
+:root{--md-blue:#071f53;--md-sky:#eaf6ff;--md-orange:#ff791f}
+body{background:#fff;color:#102b51}
+.topbar{background:#f3f9ff!important;color:#244e79!important;border-bottom:1px solid #e5eff8!important}
+.header{background:#fff!important;box-shadow:0 2px 18px #102d4a12!important;border-bottom:1px solid #e9f0f6!important}
+.logo,.nav a{color:#082657!important}.logo-symbol{background:#e9f5ff!important;color:#0879c2!important;border:0!important}.logo small{color:#6c87a1!important}.teal{color:#087cc2!important}
+.nav a.active,.nav a:hover{color:#087cc2!important}
+.header-cta{background:#0a2b66!important;color:#fff!important;border-radius:24px!important}
+.btn-teal{background:#ff791f!important;color:#fff!important;border-radius:26px!important}
+.btn-teal:hover{background:#eb6611!important;color:#fff!important}
+.hero.hero-model-b{height:625px!important;min-height:625px!important;max-height:625px!important;position:relative!important;display:block!important;isolation:isolate!important;overflow:hidden!important;background:#d6edff!important;color:#08275a!important}
+.hero-model-b .hero-photo-frame{position:absolute!important;inset:0!important;display:block!important;width:100%!important;height:100%!important;border:0!important;border-radius:0!important;z-index:0!important;opacity:1!important;overflow:hidden!important;background:#d6edff!important}
+.hero-model-b .hero-photo{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;background-size:cover!important;background-position:center 52%!important;opacity:0!important;transform:scale(1.11)!important;transition:opacity 1.1s ease,transform 6.1s cubic-bezier(.15,.4,.2,1)!important;pointer-events:none}
+.hero-model-b .hero-photo.show{opacity:1!important;transform:scale(1)!important}
+.hero-model-b .hero-pattern{position:absolute!important;inset:0!important;z-index:1!important;opacity:1!important;background:linear-gradient(90deg,#f3fafffa 0%,#eef8fff2 25%,#e5f5ffb8 46%,#e4f4ff40 70%,transparent 100%)!important}
+.hero-model-b .hero-inner{position:relative!important;z-index:2!important;height:100%!important;padding:0!important;display:flex!important;align-items:center!important}
+.hero-model-b .hero-stage{height:100%!important;width:100%!important;position:relative!important;display:flex!important;align-items:center!important}
+.hero-model-b .hero-copy{width:min(720px,75%)!important;min-height:0!important;max-height:none!important;padding:0 0 25px!important;overflow:visible!important;color:#08275a!important}
+.hero-model-b .hero-copy .eyebrow{font-size:12px!important;color:#0867a9!important;font-weight:800!important;letter-spacing:3px!important}
+.hero-model-b .hero-copy h1{font-family:'DM Sans',sans-serif!important;font-size:clamp(44px,5.1vw,76px)!important;font-weight:850!important;line-height:1.13!important;letter-spacing:-2.3px!important;color:#092456!important;margin:20px 0!important;text-shadow:none!important}
+.hero-model-b .hero-copy h1 em{font-style:normal!important;color:#0a73b9!important}
+.hero-model-b .hero-copy p{font-size:17px!important;line-height:1.75!important;color:#365a7c!important;max-width:570px!important;text-shadow:none!important}
+.hero-model-b .hero-actions{margin:30px 0 0!important;gap:25px!important}
+.hero-model-b .hero-actions .btn-teal{background:#ff791f!important;color:#fff!important;padding:16px 26px!important;box-shadow:0 8px 24px #f77d2940!important;border-radius:28px!important}
+.hero-model-b .hero-actions>a:last-child{color:#082e67!important;font-weight:800!important;text-decoration:none!important}
+.hero-model-b .hero-index{position:absolute!important;right:0!important;top:34px!important;color:#1c527a!important}
+.hero-model-b .hero-index strong{color:#ff791f!important}
+.hero-model-b .hero-slide-controls{position:absolute!important;bottom:38px!important;left:0!important;margin:0!important;display:flex!important;align-items:center!important;z-index:4!important}
+.hero-model-b .hero-slide-controls button{background:#fff!important;color:#0c3972!important;border:1px solid #d1e4f4!important;border-radius:50%!important;box-shadow:0 3px 12px #104b6d1c!important}
+.hero-model-b .hero-slide-controls button:hover{background:#ff791f!important;color:white!important}
+.hero-model-b .hero-slide-controls .hero-dot{border:0!important;box-shadow:none!important;background:transparent!important}
+.hero-model-b .hero-dot span{background:#5c94c2!important}
+.hero-model-b .hero-dot.active span{background:#ff791f!important}
+.hero-model-b .hero-progress{position:absolute!important;bottom:0!important;top:auto!important;height:4px!important;z-index:5!important;background:#c8e6f8!important}
+.hero-model-b .hero-progress>span{background:#ff791f!important;animation:revProgress 5.5s linear forwards!important}
+.hero-model-b .hero-progress>span.paused{animation-play-state:paused!important}
+.hero-model-b .revolution-copy .eyebrow{animation:revReveal .6s both!important}
+.hero-model-b .revolution-copy h1{animation:revReveal .8s .12s both!important}
+.hero-model-b .revolution-copy p{animation:revReveal .8s .3s both!important}
+.hero-model-b .revolution-copy .hero-actions{animation:revReveal .8s .45s both!important}
+.booking-search-section{background:#fff!important;padding:0 0 38px!important;position:relative!important;z-index:3!important}
+.booking-search-section>.container{position:relative!important}
+.booking-search-section .hero-quick{position:relative!important;top:-23px!important;margin:0 auto -23px!important;background:#fff!important;border:1px solid #e7eff6!important;border-radius:18px!important;box-shadow:0 12px 32px #164d7c19!important;max-width:900px!important;width:100%!important}
+.booking-search-section .hero-quick a{color:#103963!important;font-weight:800!important}
+.booking-search-section .hero-quick a:first-child,.booking-search-section .hero-quick a:hover{background:#e8f5ff!important;color:#067ab9!important;border-radius:12px!important}
+.booking-search-section .hero-search{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr)) auto!important;gap:12px!important;background:#fff!important;border:1px solid #e7eef5!important;box-shadow:0 12px 30px #17446b15!important;border-radius:16px!important;margin:18px 0 0!important;padding:15px!important;width:100%!important}
+.booking-search-section .hero-search label{min-width:0!important;color:#18466c!important}
+.booking-search-section .hero-search button{grid-column:auto!important;background:#ff791f!important;color:white!important;border-radius:12px!important;white-space:nowrap!important}
+.booking-search-section .hero-caption{color:#7890a4!important}
+.trust-strip{background:#fff!important}.trust-strip svg{color:#087fc3!important}
+.section.soft{background:#f2f9ff!important}
+.section .eyebrow,.section-title .eyebrow{color:#087fc3!important}
+.section h2 em,.section-title h2 em{color:#087fc3!important}
+.category{border-radius:18px!important}
+.card{background:#fff!important;border:1px solid #e5eef7!important;border-radius:17px!important;box-shadow:0 10px 30px #0e4a7812!important}
+.tag{background:#eaf6ff!important;color:#0874b7!important}
+.card-bottom strong,.location svg{color:#0874b7!important}
+.circle-arrow{background:#eaf6ff!important;color:#0874b7!important}
+.transport-chip{background:#edf8ff!important;color:#0874b7!important}
+.travel-services{background:#fff!important}
+.transport-tile{background:#f5fbff!important;border:1px solid #dcecf7!important;border-radius:16px!important}
+.transport-tile>span{background:#e2f3ff!important}
+.transport-tile strong{color:#0874b7!important}
+.international-feature{background:#eaf6ff!important}
+.spiritual{background-image:linear-gradient(90deg,#082b58e9,#064d8aa0),url('https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=1800&q=85')!important}
+.footer{background:#092a59!important}
+@media(max-width:950px){.booking-search-section .hero-search{grid-template-columns:repeat(2,minmax(0,1fr))!important}.booking-search-section .hero-search button{grid-column:1/-1!important}.hero-model-b .hero-copy{width:90%!important}}
+@media(max-width:650px){.hero.hero-model-b{height:620px!important;min-height:620px!important;max-height:620px!important}.hero-model-b .hero-pattern{background:linear-gradient(90deg,#f2fafff5,#e9f7ffdb 60%,#e7f5ff82)!important}.hero-model-b .hero-copy{width:100%!important;padding-bottom:32px!important}.hero-model-b .hero-copy h1{font-size:clamp(38px,9vw,54px)!important;letter-spacing:-1.4px!important}.hero-model-b .hero-copy p{font-size:14px!important;line-height:1.7!important}.hero-model-b .hero-slide-controls{bottom:20px!important}.hero-model-b .hero-index{top:18px!important}.booking-search-section .hero-quick{top:-14px!important;margin-bottom:-14px!important}.booking-search-section .hero-quick a{font-size:10px!important}.booking-search-section .hero-search{grid-template-columns:1fr!important}.booking-search-section .hero-search button{grid-column:auto!important}}
+@media(prefers-reduced-motion:reduce){.hero-model-b .hero-photo{transition:opacity .2s!important;transform:none!important}.hero-model-b .revolution-copy>*{animation:none!important}}
