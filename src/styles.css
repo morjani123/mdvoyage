@@ -232,3 +232,72 @@ body{color:#173746;background:#fff}
 .footer{background:#123b49}
 @media(max-width:900px){.booking-search-section .hero-search{grid-template-columns:repeat(2,minmax(0,1fr))}.booking-search-section .hero-search button{grid-column:1/-1}.hero-v3 .hero-copy{width:90%}}
 @media(max-width:640px){.hero.hero-v3{height:610px;min-height:610px;max-height:610px}.hero-v3 .hero-photo-frame{height:100%;inset:0;border:0;border-radius:0;opacity:1}.hero-v3 .hero-pattern{background:linear-gradient(90deg,#092e43dc,#092e438c),linear-gradient(0deg,#092e43c9,transparent)}.hero-v3 .hero-inner{padding:0}.hero-v3 .hero-copy{width:100%;max-height:490px}.hero-v3 h1{font-size:clamp(37px,9vw,53px);line-height:1.16}.hero-v3 .hero-copy p{font-size:14px}.hero-v3 .hero-slide-controls{bottom:21px}.booking-search-section{padding:22px 0}.booking-search-section .hero-search{grid-template-columns:1fr}.booking-search-section .hero-search button{grid-column:auto}.booking-search-section .hero-quick a{font-size:10px}.booking-search-section .hero-caption{font-size:9px}}
+
+
+/* V4 — Atelier Voyage: bold luxury editorial, ink / ivory / citrus. */
+:root{--ink:#17211d;--ivory:#f8f6f0;--citrus:#d7f36b;--muted:#66716c}
+body{background:#fff;color:#17211d;font-family:'DM Sans',sans-serif}
+.topbar{background:#17211d;color:#e1e6dc;letter-spacing:.7px}
+.header{background:#f8f6f0;border:0;box-shadow:0 1px 0 #d7dcd4}
+.logo{color:#17211d;letter-spacing:-.4px}
+.logo-symbol{background:#d7f36b;color:#17211d;border:0;border-radius:12px}
+.logo small{color:#748078;letter-spacing:1.5px}
+.teal{color:#4e6d35}
+.nav a{color:#2e3a32;font-weight:700}
+.nav a.active,.nav a:hover{color:#527331}
+.header-cta,.btn-teal{background:#17211d;color:#fff;border-radius:8px;box-shadow:none}
+.header-cta:hover,.btn-teal:hover{background:#354739;color:#fff}
+.hero.hero-v4{height:650px;min-height:650px;max-height:650px;overflow:hidden;isolation:isolate;background:#1b2925}
+.hero-v4 .hero-photo-frame{position:absolute;inset:0;height:100%;width:100%;z-index:0;border:0;border-radius:0;opacity:1;overflow:hidden}
+.hero-v4 .hero-photo{position:absolute;inset:0;display:block;background-position:center center;background-size:cover;opacity:0;transform:scale(1.13) translateX(1%);transition:opacity 1.05s ease,transform 5.3s cubic-bezier(.17,.46,.32,1);will-change:opacity,transform}
+.hero-v4 .hero-photo.show{opacity:1;transform:scale(1) translateX(0)}
+.hero-v4 .hero-pattern{position:absolute;inset:0;z-index:1;opacity:1;background:linear-gradient(90deg,#101e1bfa 0%,#101e1be8 26%,#17241fa8 50%,#1c292338 82%),linear-gradient(0deg,#101e1b9e,transparent 45%)}
+.hero-v4 .hero-inner{height:100%;padding:0;display:flex;align-items:center;position:relative;z-index:2}
+.hero-v4 .hero-stage{height:100%;width:100%;display:flex;align-items:center;position:relative}
+.hero-v4 .hero-copy{width:min(800px,85%);max-height:none;min-height:0;overflow:visible;padding-bottom:25px}
+.hero-v4 .eyebrow{color:#d7f36b;font-size:12px;font-weight:800;letter-spacing:3.5px}
+.hero-v4 h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(50px,6.2vw,92px);font-weight:600;line-height:1.12;letter-spacing:-2px;color:#fff;margin:22px 0}
+.hero-v4 h1 em{font-style:italic;color:#d7f36b}
+.hero-v4 .hero-copy p{font-size:17px;line-height:1.85;max-width:570px;color:#e6ebe4}
+.hero-v4 .hero-actions{margin:33px 0 0;gap:26px}
+.hero-v4 .btn-teal{background:#d7f36b;color:#17211d;padding:17px 28px;border-radius:8px;font-weight:800}
+.hero-v4 .btn-teal:hover{background:#e7ffa0;color:#17211d}
+.hero-v4 .hero-actions>a:last-child{color:#fff;text-decoration:underline;text-decoration-color:#d7f36b;text-underline-offset:7px}
+.hero-v4 .hero-index{position:absolute;top:35px;right:0;color:#ffffffbd;letter-spacing:2px;font-size:12px}
+.hero-v4 .hero-index strong{color:#d7f36b;font-size:18px}
+.hero-v4 .hero-slide-controls{position:absolute;bottom:42px;left:0;margin:0;display:flex;align-items:center}
+.hero-v4 .hero-slide-controls button{background:#ffffff1c;color:#fff;border:1px solid #ffffff80;border-radius:8px}
+.hero-v4 .hero-slide-controls button:hover{background:#d7f36b;color:#17211d}
+.hero-v4 .hero-dot.active span{background:#d7f36b}
+.hero-v4 .hero-progress{position:absolute;bottom:0;top:auto;left:0;height:5px;z-index:6}
+.hero-v4 .hero-progress>span{background:#d7f36b;animation-duration:4.8s}
+.hero-v4 .revolution-copy .eyebrow{animation:revReveal .65s both}
+.hero-v4 .revolution-copy h1{animation:revReveal .85s .12s both}
+.hero-v4 .revolution-copy p{animation:revReveal .8s .28s both}
+.hero-v4 .revolution-copy .hero-actions{animation:revReveal .8s .42s both}
+.booking-search-section{background:#f8f6f0;padding:35px 0}
+.booking-search-section .hero-quick{background:#f8f6f0;border:0;width:min(760px,100%)}
+.booking-search-section .hero-quick a{color:#314137}
+.booking-search-section .hero-quick a:first-child,.booking-search-section .hero-quick a:hover{background:#d7f36b;color:#17211d}
+.booking-search-section .hero-search{background:#fff;border:1px solid #e5e8df;border-radius:12px;box-shadow:0 14px 40px #17211d12}
+.booking-search-section .hero-search button{background:#17211d;color:#fff;border-radius:8px}
+.booking-search-section .hero-caption{color:#718076}
+.trust-strip svg{color:#6a8b3f}
+.section.soft{background:#f8f6f0}
+.section .eyebrow,.section-title .eyebrow,.eyebrow{color:#6d8745}
+.section h2 em,.section-title h2 em{color:#6c873d}
+.category{border-radius:13px}
+.card{border:1px solid #e9ece4;border-radius:13px;box-shadow:0 9px 28px #17211d0b}
+.tag{background:#d7f36b;color:#17211d}
+.card-bottom strong,.location svg{color:#536f32}
+.circle-arrow{background:#d7f36b;color:#17211d}
+.transport-chip{background:#f1f7df;color:#4b6b30}
+.travel-services{background:#f8f6f0}
+.transport-tile{background:#fff;border:1px solid #e2e8da;border-radius:13px}
+.transport-tile>span{background:#eff7da}
+.transport-tile strong{color:#587c32}
+.international-feature{background:#e9efe2}
+.spiritual{background-image:linear-gradient(90deg,#16251eea,#16251e9c),url('https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=1800&q=85')}
+.footer{background:#17211d}
+@media(max-width:700px){.hero.hero-v4{height:640px;min-height:640px;max-height:640px}.hero-v4 .hero-photo-frame{inset:0;height:100%;border:0;border-radius:0}.hero-v4 .hero-pattern{background:linear-gradient(90deg,#101e1be8,#101e1ba1),linear-gradient(0deg,#101e1bba,transparent)}.hero-v4 .hero-copy{width:100%;padding-bottom:30px}.hero-v4 h1{font-size:clamp(39px,9vw,56px);letter-spacing:-.7px}.hero-v4 .hero-copy p{font-size:14px;line-height:1.7}.hero-v4 .hero-slide-controls{bottom:23px}.hero-v4 .hero-index{top:20px;right:5px}.booking-search-section .hero-search{grid-template-columns:1fr}.booking-search-section .hero-search button{grid-column:auto}}
+@media(prefers-reduced-motion:reduce){.hero-v4 .hero-photo{transition:opacity .25s;transform:none}.hero-v4 .revolution-copy>*{animation:none!important}}
